@@ -1,2 +1,3 @@
 # TerraStella
-TerraStella is going to be an incremental game created by Ethan F and David C
+TerraStella is in development as an incremental game created by Ethan F and David C!
+Development started on July 6th of 2024

@@ -5,6 +5,7 @@
 - Figure out buildings/skills/resources or something to start the auto functionality (less clicky, more gain-y)
 - Figure out a research tree to follow/pursue
 - Figure out if we should have a story?
+- Hey we probably need a save function
 
 
 # ART

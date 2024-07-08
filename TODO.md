@@ -8,7 +8,7 @@
 
 
 # ART
-- ~~Get Abby involved~~
+- ~~Get Abby involved~~ [Abby said she will help!]
 - ~~Make Abby get involved~~
 - ~~Force Abby to get involved~~
 - Sticks n Stones need some Arts!

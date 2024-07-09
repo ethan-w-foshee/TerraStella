@@ -51,7 +51,50 @@ stateDiagram-v2
   8 --> 9
   6 --> 10
   9 --> 10
-  10 --> [*]
+  10--> 1 : Prestigate
 ```
 
-## Sub-Flowcharts
+## Flushed-Flowcharts
+```mermaid
+stateDiagram-v2
+
+ 1  : Caveman Era
+ 2  : Mining Era
+
+ state 1 {
+    1.1a : sticks
+    1.1b : rocks
+    1.1c : ore
+    1.1d : campfire
+    1.1e : metal bar
+    1.1f : huts
+    1.1g : stone axe
+    1.1h : logs
+
+    %% Main storyline
+    1.1b --> 1.1c : 1/20th chance of dropping
+    1.1d --> 1.1e
+    1.1c --> 1.1e
+
+    %% Different things that use both sticks and rocks
+    1.1a --> 1.1d
+    1.1b --> 1.1d
+    1.1a --> 1.1g
+    1.1b --> 1.1g
+
+    %% Add-ons
+    1.1g --> 1.1h
+    1.1h --> 1.1f
+ }
+
+
+
+
+ state 2 {
+    2.1a : stuff
+
+ }
+
+ [*] --> 1
+ 1 --> 2
+```

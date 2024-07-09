@@ -16,7 +16,7 @@ flowchart BT
 1(Caveman)
 2(Mining)
 3(Electricity)
-4(Manufaction)
+4(Manufacturing)
 5(Computers)
 6(Automation)
 7(Aviation)

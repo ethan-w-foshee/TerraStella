@@ -70,6 +70,7 @@ stateDiagram-v2
     1.1f : huts
     1.1g : stone axe
     1.1h : logs
+    1.1i : stone pickaxe
 
     %% Main storyline
     1.1b --> 1.1c : 1/20th chance of dropping
@@ -81,10 +82,13 @@ stateDiagram-v2
     1.1b --> 1.1d
     1.1a --> 1.1g
     1.1b --> 1.1g
+    1.1a --> 1.1i
+    1.1b --> 1.1i
 
     %% Add-ons
     1.1g --> 1.1h
     1.1h --> 1.1f
+    1.1i --> 1.1c : increase chance of dropping
  }
 
 

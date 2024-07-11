@@ -39,7 +39,7 @@ stateDiagram-v2
   end note
 
   note left of 1.5
-    some sort of optional <br> branch that makes automation <br> go faster or better?
+    some sort of optional <br> branch that starts down <br> human management
     end note
 
   [*] --> 1

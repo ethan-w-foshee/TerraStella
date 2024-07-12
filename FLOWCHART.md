@@ -102,6 +102,7 @@ stateDiagram-v2
 
  state 2 {
     2.1a : stuff
+    2.1b : prospecting
 
  }
 

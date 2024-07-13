@@ -108,4 +108,34 @@ stateDiagram-v2
 
  [*] --> 1
  1 --> 2
+ 2 --> [*]
+```
+---
+```mermaid
+stateDiagram-v2
+ 9  : Space Mining
+ 10 : Superstructures
+
+ state 9 {
+  9.1a : asteroid net
+  9.1b : asteroid relocation
+  9.1c : asteroid mining
+  9.2a : Planetary Railgun
+  
+  9.1a --> 9.1c
+  9.1b --> 9.1c
+ }
+
+ state 10 {
+  10.1 : Dyson Sphere
+  10.2 : Planet Crafting
+  10.3 : Ring Planets
+  10.4 : Space Elevator /<br> Space Skyhook
+  10.5 : Stellar Engine
+  10.6 : Relative Missiles
+ }
+
+ [*] --> 9
+ 9 --> 10
+ 10 --> [*]
 ```

@@ -121,6 +121,7 @@ stateDiagram-v2
   9.1b : asteroid relocation
   9.1c : asteroid mining
   9.2a : Planetary Railgun
+  9.3  : Large Space Stations
   
   9.1a --> 9.1c
   9.1b --> 9.1c

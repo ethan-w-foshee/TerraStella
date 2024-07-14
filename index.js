@@ -27,3 +27,7 @@ function reset() {
     document.getElementById("sticks").innerHTML = "Sticks: " + gameData.stick
     document.getElementById("rocks").innerHTML = "Rocks: " + gameData.rock
 }
+
+var saveGameLoop = window.setInterval(function () {
+    localStorage.setItem("saveItem", JSON.stringify(gameData))
+}, 15000)

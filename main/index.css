@@ -1,0 +1,36 @@
+html, body {
+    background-color: gray;
+    margin: 0.5%;
+    height: 95%;
+}
+
+#topBottom {
+    margin: 0%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+#top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#bottom, #topRight, #topLeft {
+    border: 0.5ch black solid;
+    border-top: 1ch white solid;
+    border-radius: 3ch;
+    margin: 0.75%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: lightblue;
+    border-radius: 5ch;
+    border: none;
+}

@@ -5,6 +5,8 @@ var gameData = {
     ore: 0
 }
 
+var hidden = document.getElementsByClassName("hidden")
+
 function grabStick() {
     // He grab-a da stick!
     gameData.stick += 1

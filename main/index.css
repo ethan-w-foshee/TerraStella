@@ -4,6 +4,21 @@ html, body {
     height: 95%;
 }
 
+* {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.resources {
+    display: none;
+}
+
+.resources:nth-of-type(even) {
+    background-color: rgba(184, 184, 184, 0.5);
+}
+
 #topBottom {
     margin: 0%;
     height: 100%;
@@ -25,12 +40,14 @@ html, body {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-.hidden {
-    display: none;
-}
-
 button {
     background-color: lightblue;
-    border-radius: 5ch;
-    border: none;
+    border-radius: 0.5ch;
+    border: 1px solid rgb(129, 170, 184);
+    margin: 0.5ch;
+}
+
+button:hover {
+    background-color: rgb(129, 170, 184);
+    border: 1px solid lightblue;
 }

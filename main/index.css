@@ -1,0 +1,53 @@
+html, body {
+    background-color: gray;
+    margin: 0.5%;
+    height: 95%;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.resources {
+    display: none;
+}
+
+.resources:nth-of-type(even) {
+    background-color: rgba(184, 184, 184, 0.5);
+}
+
+#topBottom {
+    margin: 0%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+#top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#bottom, #topRight, #topLeft {
+    border: 0.5ch black solid;
+    border-top: 1ch white solid;
+    border-radius: 3ch;
+    margin: 0.75%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+button {
+    background-color: lightblue;
+    border-radius: 0.5ch;
+    border: 1px solid rgb(129, 170, 184);
+    margin: 0.5ch;
+}
+
+button:hover {
+    background-color: rgb(129, 170, 184);
+    border: 1px solid lightblue;
+}

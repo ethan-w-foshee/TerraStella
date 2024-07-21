@@ -18,3 +18,8 @@
 - Make a flow chart maybe of the direction?
 - Basic over view, get from earth with sticks and stones, to a dyson sphere? Upon which you can force a "black hole bomb" and prestige?
 - Sticks + Stones = Campfire, then campfire + ore = metal?
+
+# UPDATES
+- Sex update
+- Battlepass
+- The Mets, baby

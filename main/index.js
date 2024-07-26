@@ -5,13 +5,13 @@ var gameData = {
     ore: 0
 }
 
-function grabStick() {
+export function grabStick() {
     // He grab-a da stick!
     gameData.stick += 1
     document.getElementById("sticks").innerHTML = "Sticks: " + gameData.stick
 }
 
-function grabRock() {
+export function grabRock() {
     // We have a small chance to find a shiny rock!!
     gameData.rock += 1
     document.getElementById("rocks").innerHTML = "Rocks: " + gameData.rock

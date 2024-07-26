@@ -65,22 +65,29 @@ stateDiagram-v2
 stateDiagram-v2
 
  1  : Primative Era
+ 1.AGRI : Agriculture
  2  : Mining Era
+ 3  : Electricity
 
  state 1 {
     1.1a : sticks
     1.1b : rocks
+    1.1c : clay
+
     1.2a : ore
     1.2b : campfire
-    1.4a : metal bar
-    1.4b : huts
     1.2d : stone axe
-    1.3a : logs
     1.2e : stone pickaxe
     1.2f : stone hoe<br> or <br> stone scythe
 
+    1.3a : logs
+    1.3b : brick
+
+    1.4a : metal bar
+    1.4b : huts
+
     %% Main storyline
-    1.1b --> 1.2a : 1/20th chance of dropping
+    1.1b --> 1.2a : 1/100th chance of dropping
     1.2b --> 1.4a
     1.2a --> 1.4a
 
@@ -98,22 +105,40 @@ stateDiagram-v2
     1.2d --> 1.3a
     1.3a --> 1.4b
     1.2e --> 1.2a : increase chance of dropping
+
+    1.1c --> 1.3b
+    1.2b --> 1.3b
+ }
+
+  state 1.AGRI {
+    AGRI.1a : farmland
+    AGRI.1b : hut
  }
 
  state 2 {
-    2.1a : stuff
-    2.1b : prospecting
+    2.1.0 : Prospecting
+
+    2.1a : copper
+    2.1b : tin
+    2.1c : silicon
+    2.1d : iron
+
+    2.2a : bronze
+
+    2.3a : pickaxe
+
+    %% What prospecting could turn our ores into
+    2.1.0 --> 2.1a : Reveals a chance to be
+    2.1.0 --> 2.1b : Reveals a chance to be
+    2.1.0 --> 2.1d : Reveals a chance to be
+
+    2.1a --> 2.2a
+    2.1b --> 2.2a
+
+    2.2a --> 2.3a : Either / Or <br> LESS EXPENSIVE?
+    2.1d --> 2.3a : Either / Or <br> MORE EXPENSIVE?
 
  }
-
- [*] --> 1
- 1 --> 2
- 2 --> [*]
-```
----
-```mermaid
-stateDiagram-v2
- 3  : Electricity
 
  state 3 {
   3.1.0 : Rotary
@@ -126,6 +151,12 @@ stateDiagram-v2
   3.1.0 --> 3.1a
   3.1.0 --> 3.1b
  }
+
+ [*] --> 1
+ 1 --> 1.AGRI
+ 1 --> 2 : metal bar
+ 2 --> 3 : copper
+ 3 --> [*]
 ```
 ---
 ```mermaid

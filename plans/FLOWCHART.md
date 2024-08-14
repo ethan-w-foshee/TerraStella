@@ -141,15 +141,21 @@ stateDiagram-v2
  }
 
  state 3 {
-  3.1.0 : Rotary
+  3.1.0a : Rotary
+  3.1.0b : Heat
   3.1a : Windmill
   3.1b : Waterwheel
   3.1c : Geothermal
   3.1d : Solar
   3.1e : Nuclear
+  3.1f : Steam
 
-  3.1.0 --> 3.1a
-  3.1.0 --> 3.1b
+  3.1.0a --> 3.1a
+  3.1.0a --> 3.1b
+
+  3.1.0b --> 3.1c
+  3.1.0b --> 3.1d
+  3.1.0b --> 3.1f
  }
 
  [*] --> 1

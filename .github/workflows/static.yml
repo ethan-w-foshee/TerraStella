@@ -5,6 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: 
+      - deploy
       - main
       - dev
 
@@ -31,8 +32,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Main
+      - name: Checkout Deploy
         uses: actions/checkout@v4
+        with:
+          ref: deploy
       - name: Checkout Dev
         uses: actions/checkout@v4
         with:

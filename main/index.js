@@ -40,7 +40,7 @@ class Resource {
 
     createInfoHTML() {
 	this.infoHTML = document.createElement('div');
-	this.infoHTML.classList.add("resource-info");
+	this.infoHTML.classList.add("resources");
 	this.infoHTML.id = this.id;
 	
 	this.infoTitle = document.createElement('h3');
@@ -176,7 +176,7 @@ const gameData = new class {
     }
 
     #initResources() {
-	const resourceHTML = document.getElementById('resources');
+	const resourceHTML = document.getElementById('resource-list');
 	for (const resID in this.resources) {
 	    const res = this.resources[resID];
 	    const resHTML = res.getResourceHTML();

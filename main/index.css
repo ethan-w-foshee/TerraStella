@@ -1,4 +1,4 @@
-html, body {
+    html, body {
     background-color: gray;
     margin: 0.5%;
     height: 95%;
@@ -8,13 +8,35 @@ html, body {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
+    /* border: 3px white solid; */
 }
 
-.resources {
-    display: none;
+#content{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* height: 85vh; */
 }
 
-.resources:nth-of-type(even) {
+#content > div {
+    border: 0.5ch black solid;
+    border-top: 1ch white solid;
+    border-radius: 3ch;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 1em;
+    padding: 1em;
+}
+
+#info {
+    grid-column: 1 / 2;
+    height: 85vh;
+}
+
+#resource-list {
+    grid-column: 2 / 3;
+    height: 85vh;
+}
+
+#resource-list:nth-of-type(even) {
     background-color: rgba(184, 184, 184, 0.5);
 }
 
@@ -23,20 +45,6 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-rows: 50% 50%;
-}
-
-#top {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-#bottom, #topRight, #topLeft {
-    border: 0.5ch black solid;
-    border-top: 1ch white solid;
-    border-radius: 3ch;
-    margin: 0.75%;
-    padding: 1%;
-    background-color: rgba(0, 0, 0, 0.15);
 }
 
 button {
